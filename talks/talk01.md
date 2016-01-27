@@ -81,7 +81,7 @@ style: style.css
 Git is distributed version control system
 
 * Keeps every saved change (commit/version) of your text files
-* Allows to backup any version from history
+* Allows to restore any version from history
 * Syncs with remote computers (repositories)
 * Works offline (no Internet needed)
 * Easy team work
@@ -105,10 +105,10 @@ Git is distributed version control system
 
 --
 
-### GIT - What is changed
+### GIT - What has been changed
 
 * Add few paragraphs into `a.txt`
-* `git status` - shows what is changed, output willl be like
+* `git status` - shows what has been changed, output will look like
 
 ```bash
 On branch master
@@ -119,9 +119,9 @@ Changes to be committed:
 ```
 --
 
-### GIT - What are changes
+### GIT - See the changes
 
-* `git diff` - see the changes, output will be like:
+* `git diff` - see the changes, output will look like:
 
 ```bash
 diff --git a/a.txt b/a.txt
@@ -141,7 +141,7 @@ index 796d523..497812f 100644
 
 ### GIT - What is done
 
-* Let's see what is done - `git log`, output will be like:
+* Let's see what is done - `git log`, output will look like:
 
 ```bash
 commit 55f21e56db012484919cef1a1f196ffb9aea1915
@@ -161,7 +161,7 @@ Date:   Wed Jan 27 19:14:14 2016 +0100
 ### GIT - Backup changes
 
 * Let's send the changes into a remote computer (repository) and save work - `git push`
-* The remote repository can be in the Internet and our work is safely backuped
+* The remote repository can be online and our work is safely backuped
 * Download changes from the remote repository - `git pull`
 
 --
@@ -170,8 +170,8 @@ Date:   Wed Jan 27 19:14:14 2016 +0100
 
 * Creates new version
 * A commit message is needed
-* The message has to describe **what is done**! - IMPORTANT
-* Keep commit **smallest as possible** - IMPORTANT
+* The message has to describe **what has been done**! - IMPORTANT
+* Keep commit **as simple as possible** - IMPORTANT
 * Has a unique ID - that weird long string like `55f21e56db012484919cef1a1f196ffb9aea1915`
 
 --
@@ -187,11 +187,11 @@ Date:   Wed Jan 27 19:14:14 2016 +0100
 #### Add
 
 * Prepares a files for an upcomming commit
-* Says to Git `Hey I want to safe this file`
+* Tells Git `Hey I want to safe this file`
 
 #### Status
 
-* Shows what files are changed
+* Shows what files changed
 
 --
 
@@ -227,7 +227,7 @@ Date:   Wed Jan 27 19:14:14 2016 +0100
 
 ### Myths and lies
 
-* GIT is only for programmers
+* Git is only for programmers
 * Commands are super-nerdy complicated [https://tortoisegit.org/](https://tortoisegit.org/)
 * Git has deleted my work! (almost impossible!)
 
@@ -240,7 +240,7 @@ Date:   Wed Jan 27 19:14:14 2016 +0100
 * `add` - prepares files for a commit
 * `commit` - makes new version
 * `pull` and `push` - syncs with remote repositories
-* `status` - shows what is changed
+* `status` - shows what has been changed
 * `diff` - shows changes
 * `log` - shows a history
 
